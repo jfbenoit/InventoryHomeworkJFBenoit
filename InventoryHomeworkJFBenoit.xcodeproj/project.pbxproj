@@ -13,6 +13,16 @@
 		16013C9C1AB687E600CFD476 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16013C9B1AB687E600CFD476 /* Images.xcassets */; };
 		16013C9F1AB687E600CFD476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16013C9D1AB687E600CFD476 /* Main.storyboard */; };
 		16013CAB1AB687E600CFD476 /* InventoryHomeworkJFBenoitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CAA1AB687E600CFD476 /* InventoryHomeworkJFBenoitTests.m */; };
+		16013CB61AB688B100CFD476 /* InventoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16013CB41AB688B100CFD476 /* InventoryModel.xcdatamodeld */; };
+		16013CBB1AB689A300CFD476 /* ConfigurableCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CB81AB689A300CFD476 /* ConfigurableCoreDataStack.m */; };
+		16013CBC1AB689A300CFD476 /* CoreDataStackConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CBA1AB689A300CFD476 /* CoreDataStackConfiguration.m */; };
+		16013CC01AB68D9B00CFD476 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CBF1AB68D9B00CFD476 /* Item.m */; };
+		16013CC31AB68D9C00CFD476 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CC21AB68D9C00CFD476 /* Tag.m */; };
+		16013CC61AB68D9C00CFD476 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CC51AB68D9C00CFD476 /* Photo.m */; };
+		16013CC91AB68D9C00CFD476 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CC81AB68D9C00CFD476 /* Location.m */; };
+		16013CCB1AB6957B00CFD476 /* notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 16013CCA1AB6957B00CFD476 /* notes.rtf */; };
+		16013CCE1AB7D96800CFD476 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CCD1AB7D96800CFD476 /* DetailsViewController.m */; };
+		16013CD11AB7E17C00CFD476 /* NSManagedObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CD01AB7E17C00CFD476 /* NSManagedObject+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +48,24 @@
 		16013CA41AB687E600CFD476 /* InventoryHomeworkJFBenoitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryHomeworkJFBenoitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16013CA91AB687E600CFD476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16013CAA1AB687E600CFD476 /* InventoryHomeworkJFBenoitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InventoryHomeworkJFBenoitTests.m; sourceTree = "<group>"; };
+		16013CB51AB688B100CFD476 /* InventoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InventoryModel.xcdatamodel; sourceTree = "<group>"; };
+		16013CB71AB689A300CFD476 /* ConfigurableCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurableCoreDataStack.h; sourceTree = "<group>"; };
+		16013CB81AB689A300CFD476 /* ConfigurableCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurableCoreDataStack.m; sourceTree = "<group>"; };
+		16013CB91AB689A300CFD476 /* CoreDataStackConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStackConfiguration.h; sourceTree = "<group>"; };
+		16013CBA1AB689A300CFD476 /* CoreDataStackConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStackConfiguration.m; sourceTree = "<group>"; };
+		16013CBE1AB68D9B00CFD476 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		16013CBF1AB68D9B00CFD476 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		16013CC11AB68D9C00CFD476 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		16013CC21AB68D9C00CFD476 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		16013CC41AB68D9C00CFD476 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		16013CC51AB68D9C00CFD476 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		16013CC71AB68D9C00CFD476 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		16013CC81AB68D9C00CFD476 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		16013CCA1AB6957B00CFD476 /* notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = notes.rtf; sourceTree = "<group>"; };
+		16013CCC1AB7D96800CFD476 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		16013CCD1AB7D96800CFD476 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		16013CCF1AB7E17C00CFD476 /* NSManagedObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extensions.h"; sourceTree = "<group>"; };
+		16013CD01AB7E17C00CFD476 /* NSManagedObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +107,16 @@
 		16013C901AB687E600CFD476 /* InventoryHomeworkJFBenoit */ = {
 			isa = PBXGroup;
 			children = (
+				16013CCA1AB6957B00CFD476 /* notes.rtf */,
+				16013CBD1AB689B700CFD476 /* Model */,
 				16013C931AB687E600CFD476 /* AppDelegate.h */,
 				16013C941AB687E600CFD476 /* AppDelegate.m */,
 				16013C981AB687E600CFD476 /* ViewController.h */,
 				16013C991AB687E600CFD476 /* ViewController.m */,
 				16013C9B1AB687E600CFD476 /* Images.xcassets */,
 				16013C9D1AB687E600CFD476 /* Main.storyboard */,
+				16013CCC1AB7D96800CFD476 /* DetailsViewController.h */,
+				16013CCD1AB7D96800CFD476 /* DetailsViewController.m */,
 				16013C911AB687E600CFD476 /* Supporting Files */,
 			);
 			path = InventoryHomeworkJFBenoit;
@@ -114,6 +146,28 @@
 				16013CA91AB687E600CFD476 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16013CBD1AB689B700CFD476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16013CB71AB689A300CFD476 /* ConfigurableCoreDataStack.h */,
+				16013CB81AB689A300CFD476 /* ConfigurableCoreDataStack.m */,
+				16013CB91AB689A300CFD476 /* CoreDataStackConfiguration.h */,
+				16013CBA1AB689A300CFD476 /* CoreDataStackConfiguration.m */,
+				16013CCF1AB7E17C00CFD476 /* NSManagedObject+Extensions.h */,
+				16013CD01AB7E17C00CFD476 /* NSManagedObject+Extensions.m */,
+				16013CB41AB688B100CFD476 /* InventoryModel.xcdatamodeld */,
+				16013CC71AB68D9C00CFD476 /* Location.h */,
+				16013CC81AB68D9C00CFD476 /* Location.m */,
+				16013CC41AB68D9C00CFD476 /* Photo.h */,
+				16013CC51AB68D9C00CFD476 /* Photo.m */,
+				16013CC11AB68D9C00CFD476 /* Tag.h */,
+				16013CC21AB68D9C00CFD476 /* Tag.m */,
+				16013CBE1AB68D9B00CFD476 /* Item.h */,
+				16013CBF1AB68D9B00CFD476 /* Item.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16013CCB1AB6957B00CFD476 /* notes.rtf in Resources */,
 				16013C9C1AB687E600CFD476 /* Images.xcassets in Resources */,
 				16013C9F1AB687E600CFD476 /* Main.storyboard in Resources */,
 			);
@@ -215,8 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16013CBB1AB689A300CFD476 /* ConfigurableCoreDataStack.m in Sources */,
 				16013C9A1AB687E600CFD476 /* ViewController.m in Sources */,
+				16013CCE1AB7D96800CFD476 /* DetailsViewController.m in Sources */,
+				16013CD11AB7E17C00CFD476 /* NSManagedObject+Extensions.m in Sources */,
 				16013C971AB687E600CFD476 /* main.m in Sources */,
+				16013CC61AB68D9C00CFD476 /* Photo.m in Sources */,
+				16013CB61AB688B100CFD476 /* InventoryModel.xcdatamodeld in Sources */,
+				16013CC31AB68D9C00CFD476 /* Tag.m in Sources */,
+				16013CC91AB68D9C00CFD476 /* Location.m in Sources */,
+				16013CBC1AB689A300CFD476 /* CoreDataStackConfiguration.m in Sources */,
+				16013CC01AB68D9B00CFD476 /* Item.m in Sources */,
 				16013C951AB687E600CFD476 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +478,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16013CB41AB688B100CFD476 /* InventoryModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16013CB51AB688B100CFD476 /* InventoryModel.xcdatamodel */,
+			);
+			currentVersion = 16013CB51AB688B100CFD476 /* InventoryModel.xcdatamodel */;
+			name = InventoryModel.xcdatamodeld;
+			path = ../InventoryModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 16013C861AB687E600CFD476 /* Project object */;
 }

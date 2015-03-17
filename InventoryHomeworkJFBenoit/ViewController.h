@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
+@property (weak) IBOutlet NSTableView *table;
 
-
+- (IBAction)clickedAdd:(id)sender;
 @end
 
