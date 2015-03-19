@@ -18,10 +18,10 @@
 @end
 
 @interface Tag (CoreDataGeneratedAccessors)
-
-- (void)addItemsObject:(Item *)value;
-- (void)removeItemsObject:(Item *)value;
-- (void)addItems:(NSSet *)values;
-- (void)removeItems:(NSSet *)values;
+//
+//- (void)addItemsObject:(Item *)value;
+//- (void)removeItemsObject:(Item *)value;
+//- (void)addItems:(NSSet *)values;
+//- (void)removeItems:(NSSet *)values;
 
 @end

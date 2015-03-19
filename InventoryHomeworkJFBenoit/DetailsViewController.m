@@ -8,6 +8,7 @@
 
 #import "DetailsViewController.h"
 #import "Item.h"
+#import "Location.h"
 #import "NSManagedObject+Extensions.h"
 
 
@@ -20,26 +21,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    if (self.i != nil) {
+        // populate all the fields
+        self.titleField.stringValue = self.i.title;
+        self.qtyField.stringValue = [self.i.quantityAvailable stringValue];
+        self.priceField.stringValue = [self.i.price stringValue];
+        self.latitudeField.stringValue = [self.i.location.latitude stringValue];
+        self.longitudeField.stringValue = [self.i.location.longitude stringValue];
+    }
 }
 
 - (IBAction)clickedCancel:(id)sender {
-    NSLog(@"canceling");
     [self dismissController:self];
 }
 
 
 - (IBAction)clickedSave:(id)sender {
-    NSLog(@"starting save");
-    Item *newItem = [Item createInMoc:self.moc];
-    newItem.title = self.titleField.stringValue;
-    newItem.quantityAvailable = @(self.qtyField.integerValue);
-    newItem.price = [NSDecimalNumber decimalNumberWithString:self.priceField.stringValue];
-    [newItem.managedObjectContext save:nil];
+    if (self.i == nil) {
+        // creating a new one
+        self.i = [Item createInMoc:self.moc];
+        
+    }
+    self.i.title = self.titleField.stringValue;
+    self.i.quantityAvailable = @(self.qtyField.integerValue);
+    self.i.price = [NSDecimalNumber decimalNumberWithString:self.priceField.stringValue];
+    
+    // handle the location
+    Location *loc = self.i.location;
+    if (loc == nil) {
+        loc = [Location createInMoc:self.moc];
+    }
+    loc.latitude = @(self.latitudeField.doubleValue);
+    loc.longitude = @(self.longitudeField.doubleValue);
+    
+    self.i.location = loc;
+    
+    [self.i.managedObjectContext save:nil];
     NSLog(@"save completed");
     
     NSFetchRequest *fr = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
     NSArray *allItems = [self.moc executeFetchRequest:fr error:nil];
     NSLog(@"logging all items");
     NSLog(@"%@",allItems);
+    
+    [self dismissController:self];
 }
 @end

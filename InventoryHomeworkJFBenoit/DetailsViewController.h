@@ -7,11 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "Item.h"
 
 @interface DetailsViewController : NSViewController
 
 @property (strong, nonatomic) NSManagedObjectContext *moc;
+@property (strong, nonatomic) Item *i;
 
 @property (weak) IBOutlet NSTextField *titleField;
 @property (weak) IBOutlet NSTextField *priceField;

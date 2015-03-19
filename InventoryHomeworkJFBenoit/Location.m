@@ -16,4 +16,9 @@
 @dynamic longitude;
 @dynamic item;
 
++(NSString *)entityName
+{
+    return @"Location";
+}
+
 @end

@@ -15,4 +15,9 @@
 @dynamic name;
 @dynamic items;
 
++(NSString *)entityName
+{
+    return @"Tag";
+}
+
 @end
