@@ -4,14 +4,26 @@
 \margl1440\margr1440\vieww9000\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\fs24 \cf0 \
-I generated my model classes via xcode after I set everything up in InventoryModel. Cool that it created all the classes and properties etc, but I don't understand some of the inconsistencies. For example, in Location.h, it correctly gave the "item" property a type of Item (and did a @class Item), but in Item.h, the "location" property was just a NSManagedObject. Another example: tag and item header files have CoreDataGeneratedAccessors, but Location and Photo do not. It's not clear to me why this is.\
+\f0\fs24 \cf0 Notes\
 \
 Used the pseudo switch-on-string code found at\
 http://stackoverflow.com/questions/19067785/switch-case-on-nsstring-in-objective-c\
+\
+I used your NSManagedObject category as well as your config core data stack.\
 \
 You have to import the category into any class that is using objects of the category type in order for the category to be recognized, I guess. Weird.\
 \
 Do not use the same dataFileNameWithExtension value across projects!! An unhelpful error will result when saving, causing lots of confusion.\
 \
-What is the "text cell" under each table cell? I tried coloring my text there and it didn't work (but got it working by coloring the text in the Table View Cell). }
+\
+Questions\
+\
+I seem to have some kind of race condition. Sometimes when I open my app, the existing items won't display in the list. If I do something to trigger a table reload, they show up. But other times I open my app, they show up fine. Not sure why that is.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 I generated my model classes via xcode after I set everything up in InventoryModel. Cool that it created all the classes and properties etc, but I don't understand some of the inconsistencies. For example, in Location.h, it correctly gave the "item" property a type of Item (and did a @class Item), but in Item.h, the "location" property was just a NSManagedObject. Another example: tag and item header files have CoreDataGeneratedAccessors, but Location and Photo do not. It's not clear to me why this is.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+What is the "text cell" under each table cell? I tried coloring my text there and it didn't work (but got it working by coloring the text in the Table View Cell). \
+\
+}

@@ -105,8 +105,14 @@
     DetailsViewController *addVC = [sb instantiateControllerWithIdentifier:@"detailsView"];
     addVC.moc = self.moc;
     [self presentViewControllerAsSheet:addVC];
-    [self.table reloadData];
     
+}
+
+- (IBAction)clickedDeleteAll:(id)sender {
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailsViewController *deleteVC = [sb instantiateControllerWithIdentifier:@"deleteAllView"];
+    deleteVC.moc = self.moc;
+    [self presentViewControllerAsSheet:deleteVC];
 }
 
 - (void)doubleClicked:(id)sender {

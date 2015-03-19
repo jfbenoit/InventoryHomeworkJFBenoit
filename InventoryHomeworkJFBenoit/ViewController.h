@@ -12,5 +12,6 @@
 @property (weak) IBOutlet NSTableView *table;
 
 - (IBAction)clickedAdd:(id)sender;
+- (IBAction)clickedDeleteAll:(id)sender;
 @end
 

@@ -813,6 +813,52 @@ Gw
             </objects>
             <point key="canvasLocation" x="599" y="453"/>
         </scene>
+        <!--Confirm Delete View Controller-->
+        <scene sceneID="FjS-ll-R08">
+            <objects>
+                <viewController storyboardIdentifier="deleteAllView" id="h5r-o3-6dd" customClass="ConfirmDeleteViewController" sceneMemberID="viewController">
+                    <view key="view" id="vJf-pV-BkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="93"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLw-me-iLM">
+                                <rect key="frame" x="18" y="56" width="262" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Are you sure you want to delete all items?" id="Qjg-6z-rzQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-go-TWt">
+                                <rect key="frame" x="14" y="20" width="83" height="32"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jnu-R9-nj5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelClicked:" target="h5r-o3-6dd" id="mMR-FF-Y1F"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2k-Sx-tWe">
+                                <rect key="frame" x="202" y="20" width="80" height="32"/>
+                                <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aBV-gB-AnZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="deleteClicked:" target="h5r-o3-6dd" id="9kc-Qe-6xi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="QY0-u4-JsW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="670.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
@@ -1021,11 +1067,22 @@ Gw
                                     <action selector="clickedAdd:" target="XfG-lQ-9wD" id="i2R-KF-wbr"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjH-0g-IoU">
+                                <rect key="frame" x="402" y="240" width="64" height="32"/>
+                                <buttonCell key="cell" type="push" title="- all" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VB4-jH-Bhc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickedDeleteAll:" target="XfG-lQ-9wD" id="i0n-Cf-NPy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="fEU-y0-YE8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="5NP-3o-MD8"/>
                             <constraint firstItem="AMm-oo-FXl" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="11" id="Crf-uV-qW3"/>
                             <constraint firstItem="fEU-y0-YE8" firstAttribute="top" secondItem="AMm-oo-FXl" secondAttribute="bottom" constant="9" id="GRU-kV-7lB"/>
+                            <constraint firstAttribute="trailing" secondItem="sjH-0g-IoU" secondAttribute="trailing" constant="20" id="HJg-dl-DiG"/>
                             <constraint firstItem="fEU-y0-YE8" firstAttribute="top" secondItem="AMm-oo-FXl" secondAttribute="bottom" constant="9" id="Qwb-WW-S0W"/>
                             <constraint firstAttribute="trailing" secondItem="fEU-y0-YE8" secondAttribute="trailing" id="SRp-pH-3ux"/>
                             <constraint firstAttribute="bottom" secondItem="fEU-y0-YE8" secondAttribute="bottom" id="hUI-S8-aAj"/>

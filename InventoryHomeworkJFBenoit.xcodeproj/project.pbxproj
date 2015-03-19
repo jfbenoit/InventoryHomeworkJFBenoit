@@ -23,6 +23,7 @@
 		16013CCB1AB6957B00CFD476 /* notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 16013CCA1AB6957B00CFD476 /* notes.rtf */; };
 		16013CCE1AB7D96800CFD476 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CCD1AB7D96800CFD476 /* DetailsViewController.m */; };
 		16013CD11AB7E17C00CFD476 /* NSManagedObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CD01AB7E17C00CFD476 /* NSManagedObject+Extensions.m */; };
+		16013CD51ABB138C00CFD476 /* ConfirmDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16013CD31ABB138C00CFD476 /* ConfirmDeleteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		16013CCD1AB7D96800CFD476 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		16013CCF1AB7E17C00CFD476 /* NSManagedObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extensions.h"; sourceTree = "<group>"; };
 		16013CD01AB7E17C00CFD476 /* NSManagedObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extensions.m"; sourceTree = "<group>"; };
+		16013CD21ABB138C00CFD476 /* ConfirmDeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmDeleteViewController.h; sourceTree = "<group>"; };
+		16013CD31ABB138C00CFD476 /* ConfirmDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmDeleteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				16013C991AB687E600CFD476 /* ViewController.m */,
 				16013C9B1AB687E600CFD476 /* Images.xcassets */,
 				16013C9D1AB687E600CFD476 /* Main.storyboard */,
+				16013CD21ABB138C00CFD476 /* ConfirmDeleteViewController.h */,
+				16013CD31ABB138C00CFD476 /* ConfirmDeleteViewController.m */,
 				16013CCC1AB7D96800CFD476 /* DetailsViewController.h */,
 				16013CCD1AB7D96800CFD476 /* DetailsViewController.m */,
 				16013C911AB687E600CFD476 /* Supporting Files */,
@@ -278,6 +283,7 @@
 				16013CC61AB68D9C00CFD476 /* Photo.m in Sources */,
 				16013CB61AB688B100CFD476 /* InventoryModel.xcdatamodeld in Sources */,
 				16013CC31AB68D9C00CFD476 /* Tag.m in Sources */,
+				16013CD51ABB138C00CFD476 /* ConfirmDeleteViewController.m in Sources */,
 				16013CC91AB68D9C00CFD476 /* Location.m in Sources */,
 				16013CBC1AB689A300CFD476 /* CoreDataStackConfiguration.m in Sources */,
 				16013CC01AB68D9B00CFD476 /* Item.m in Sources */,
