@@ -9,6 +9,7 @@
 #import "DetailsViewController.h"
 #import "Item.h"
 #import "Location.h"
+#import "Tag.h"
 #import "NSManagedObject+Extensions.h"
 
 
@@ -28,6 +29,12 @@
         self.priceField.stringValue = [self.i.price stringValue];
         self.latitudeField.stringValue = [self.i.location.latitude stringValue];
         self.longitudeField.stringValue = [self.i.location.longitude stringValue];
+        NSMutableString *atags = [[NSMutableString alloc]init];
+        for (Tag* t in self.i.tags) {
+            [atags appendString:t.name];
+            [atags appendString:@" "];
+        }
+        self.tagsField.stringValue = atags;
     }
 }
 
@@ -53,6 +60,15 @@
     }
     loc.latitude = @(self.latitudeField.doubleValue);
     loc.longitude = @(self.longitudeField.doubleValue);
+    
+    NSArray *stags = [self.tagsField.stringValue componentsSeparatedByString:@" "];
+    NSMutableSet *tags = [[NSMutableSet alloc] init];
+    for (NSString* stag in stags) {
+        Tag *tag = [Tag createInMoc:self.moc];
+        tag.name = stag;
+        [tags addObject:tag];
+    }
+    self.i.tags = tags;
     
     self.i.location = loc;
     
